@@ -1,0 +1,5 @@
+<ul class="list-group">
+    <li *ngFor="let user of users" class="list-group-item" [routerLink]="['/users', user.id]" aria-current="true">{{user.nome + ' ' + user.cognome}}</li>
+</ul>
+<router-outlet></router-outlet>
+
